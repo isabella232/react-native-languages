@@ -13,3 +13,5 @@ Desktop.ini
 .vscode/
 
 android/build/
+
+*.swp

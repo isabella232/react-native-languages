@@ -70,7 +70,7 @@ QList<ModuleMethod*> RNLanguages::methodsToExport() {
 }
 
 QVariantMap RNLanguages::constantsToExport() {
-    return QVariantMap{{"languages", d_ptr->languages()}};
+    return QVariantMap{{"languages", d_ptr->languages()}, {"language", d_ptr->languages()[0]}};
 }
 
 void RNLanguages::setBridge(Bridge* bridge) {
